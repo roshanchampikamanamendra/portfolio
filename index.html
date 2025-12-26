@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan Champika | GIS & Remote Sensing Associate</title>
+    <meta name="description"
+        content="Portfolio of Roshan Champika, a GIS and Remote Sensing Associate skilled in GIS Analysis, Azure, and IT Infrastructure.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Leaflet for Interactive Maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Roshan<span class="text-gradient">.</span></div>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#map-game">GIS Game</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1.5rem; color: #000;">Contact
+                        Me</a>
+                </div>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-subtitle">GIS & Remote Sensing Associate</p>
+                <h1 class="hero-title">Mapping the Future with <span class="text-gradient">Data & Insight</span></h1>
+                <p class="hero-desc">
+                    Leveraging GIS analysis and information technology infrastructure to enhance spatial data
+                    interpretation and deliver actionable insights.
+                </p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="#projects" class="btn btn-outline" style="margin-left: 1rem;">View Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="text-gradient">About Me</h2>
+            <div class="about-grid">
+                <div class="profile-img-container">
+                    <img src="pp.jpg" alt="Roshan Champika" class="profile-img">
+                </div>
+                <div class="about-text-container">
+                    <div class="about-text">
+                        <p>
+                            I am a GIS and Remote Sensing Associate at Permia Sensing with a passion for advancing
+                            geospatial applications.
+                            With a strong background in geography and hands-on experience in GIS analysis, I contribute
+                            to the development
+                            and implementation of geospatial solutions that support data-driven decision-making.
+                        </p>
+                        <p>
+                            My expertise spans GIS Analysis, Microsoft Azure Fundamentals (AZ-900), and IT
+                            infrastructure.
+                            I aim to integrate innovative technologies to solve complex spatial problems.
+                            Based in Badulla District, Uva Province, Sri Lanka.
+                        </p>
+                    </div>
+                    <!-- Optional: Add a profile image or stats here -->
+                    <div class="stats-container">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">4</span>
+                                <span class="stat-label">Certifications</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Languages</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Dedication</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="text-gradient" style="text-align: center; margin-bottom: 4rem;">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="P1.gif" alt="Sri Lanka Monthly Rainfall 2024" class="project-img">
+                    <div class="project-content">
+                        <h3>Sri Lanka's Rainfall 2024</h3>
+                        <p class="project-desc">
+                            Visualizing Sri Lanka's Monthly Rainfall for 2024. Explore the precipitation patterns using
+                            CHIRPS data and advanced GIS techniques. Precise grid intervals and dynamic maps bring
+                            rainfall insights closer than ever!
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">GIS</span>
+                            <span class="project-tag">CHIRPS Data</span>
+                            <span class="project-tag">Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="P2.jpg" alt="River Networks of India and Sri Lanka" class="project-img">
+                    <div class="project-content">
+                        <h3>River Networks Visualization</h3>
+                        <p class="project-desc">
+                            Visualizing the majestic river networks of India and Sri Lanka using Python! A blend of
+                            data, geospatial insights, and the power of code.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Geospatial Analysis</span>
+                            <span class="project-tag">Data Viz</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="P3.jpg" alt="Sri Lanka Nighttime Lights" class="project-img">
+                    <div class="project-content">
+                        <h3>Sri Lanka Nighttime Lights</h3>
+                        <p class="project-desc">
+                            Exploring Sri Lanka's vibrant nighttime lights! Created this visualization using Python to
+                            highlight brightness intensity across the island.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Data Viz</span>
+                            <span class="project-tag">Night Lights</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="P4.jpg" alt="Land Use Map Badulla" class="project-img">
+                    <div class="project-content">
+                        <h3>Land Use Classification (ML)</h3>
+                        <p class="project-desc">
+                            Machine learning in action. Used a Random Forest classifier in Google Earth Engine to create
+                            a detailed land-use map for the Badulla Divisional Secretariat area (2023), utilizing 10m
+                            resolution Sentinel-1 SAR and Sentinel-2 data.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Google Earth Engine</span>
+                            <span class="project-tag">Random Forest</span>
+                            <span class="project-tag">Sentinel Data</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive GIS Map Game -->
+    <section id="map-game" class="section globe-section">
+        <div class="container">
+            <!-- Globe Header with animated compass -->
+            <div class="game-header">
+                <div class="compass-rose">
+                    <div class="compass-inner">
+                        <span class="compass-n">N</span>
+                        <span class="compass-e">E</span>
+                        <span class="compass-s">S</span>
+                        <span class="compass-w">W</span>
+                    </div>
+                </div>
+                <h2 class="text-gradient game-title">
+                    <i class="fas fa-globe-americas"></i> GeoQuest Challenge
+                </h2>
+                <p class="game-subtitle">Master the world's geography - One location at a time</p>
+            </div>
+
+            <div class="game-container">
+                <!-- Difficulty Selector -->
+                <div class="difficulty-selector">
+                    <h3><i class="fas fa-layer-group"></i> Select Difficulty</h3>
+                    <div class="difficulty-options">
+                        <button class="difficulty-btn active" data-difficulty="easy">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>Explorer</span>
+                            <small>Easy • 45s</small>
+                        </button>
+                        <button class="difficulty-btn" data-difficulty="medium">
+                            <i class="fas fa-compass"></i>
+                            <span>Navigator</span>
+                            <small>Medium • 30s</small>
+                        </button>
+                        <button class="difficulty-btn" data-difficulty="hard">
+                            <i class="fas fa-globe"></i>
+                            <span>Cartographer</span>
+                            <small>Hard • 20s</small>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Game Stats Dashboard -->
+                <div class="game-dashboard">
+                    <div class="stat-card globe-stat">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-value" id="score">0</span>
+                            <span class="stat-label">Total Score</span>
+                        </div>
+                    </div>
+                    <div class="stat-card globe-stat">
+                        <div class="stat-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-value" id="accuracy">0%</span>
+                            <span class="stat-label">Accuracy</span>
+                        </div>
+                    </div>
+                    <div class="stat-card globe-stat">
+                        <div class="stat-icon">
+                            <i class="fas fa-map-pin"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-value" id="correct-guesses">0/0</span>
+                            <span class="stat-label">Correct</span>
+                        </div>
+                    </div>
+                    <div class="stat-card globe-stat timer-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-hourglass-half"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-value" id="timer">--</span>
+                            <span class="stat-label">Time Left</span>
+                            <div class="timer-bar">
+                                <div class="timer-fill" id="timer-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location Info Card -->
+                <div class="location-card">
+                    <div class="location-header">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="location-difficulty" id="location-difficulty">EXPLORER</span>
+                    </div>
+                    <h3 id="location-name">Ready to explore the world?</h3>
+                    <div class="hint-container">
+                        <div class="hint-item">
+                            <i class="fas fa-info-circle"></i>
+                            <p id="location-hint">Select difficulty and click "Start Quest" to begin your journey!</p>
+                        </div>
+                        <button class="hint-btn" id="extra-hint-btn" disabled>
+                            <i class="fas fa-lightbulb"></i> Get Extra Hint (-50 pts)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Map Container with Globe Frame -->
+                <div class="map-frame">
+                    <div class="map-decoration top-left"></div>
+                    <div class="map-decoration top-right"></div>
+                    <div class="map-decoration bottom-left"></div>
+                    <div class="map-decoration bottom-right"></div>
+                    <div id="game-map"></div>
+                    <div class="map-overlay" id="map-overlay">
+                        <div class="map-overlay-content">
+                            <i class="fas fa-globe-americas fa-spin"></i>
+                            <p>Click "Start Quest" to begin!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Controls -->
+                <div class="game-controls">
+                    <button id="start-game" class="btn-game btn-primary-game">
+                        <i class="fas fa-play"></i>
+                        <span>Start Quest</span>
+                    </button>
+                    <button id="submit-guess" class="btn-game btn-success-game" disabled>
+                        <i class="fas fa-check-circle"></i>
+                        <span>Submit Guess</span>
+                    </button>
+                    <button id="skip-location" class="btn-game btn-warning-game" disabled>
+                        <i class="fas fa-forward"></i>
+                        <span>Skip Location</span>
+                    </button>
+                    <button id="reset-game" class="btn-game btn-secondary-game">
+                        <i class="fas fa-redo"></i>
+                        <span>Reset Game</span>
+                    </button>
+                </div>
+
+                <!-- Feedback Panel -->
+                <div id="game-feedback" class="feedback-panel"></div>
+
+                <!-- Achievements Panel -->
+                <div class="achievements-panel">
+                    <h3><i class="fas fa-award"></i> Achievements</h3>
+                    <div class="achievements-grid" id="achievements-grid">
+                        <div class="achievement locked" data-achievement="first-correct">
+                            <i class="fas fa-star"></i>
+                            <span>First Victory</span>
+                        </div>
+                        <div class="achievement locked" data-achievement="five-streak">
+                            <i class="fas fa-fire"></i>
+                            <span>5 in a Row</span>
+                        </div>
+                        <div class="achievement locked" data-achievement="speed-demon">
+                            <i class="fas fa-bolt"></i>
+                            <span>Speed Demon</span>
+                        </div>
+                        <div class="achievement locked" data-achievement="perfect-accuracy">
+                            <i class="fas fa-bullseye"></i>
+                            <span>Sharpshooter</span>
+                        </div>
+                        <div class="achievement locked" data-achievement="master-cartographer">
+                            <i class="fas fa-crown"></i>
+                            <span>Master</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map Explorer -->
+    <section id="map-explorer" class="section">
+        <div class="container">
+            <h2 class="text-gradient" style="text-align: center; margin-bottom: 1rem;">Interactive GIS Map Explorer</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;">Explore different map layers
+                and GIS data visualization</p>
+
+            <div class="map-explorer-container">
+                <div class="map-controls-panel">
+                    <h3>Map Layers</h3>
+                    <div class="layer-control">
+                        <label class="layer-option">
+                            <input type="radio" name="basemap" value="osm" checked>
+                            <span><i class="fas fa-map"></i> OpenStreetMap</span>
+                        </label>
+                        <label class="layer-option">
+                            <input type="radio" name="basemap" value="satellite">
+                            <span><i class="fas fa-satellite"></i> Satellite</span>
+                        </label>
+                        <label class="layer-option">
+                            <input type="radio" name="basemap" value="terrain">
+                            <span><i class="fas fa-mountain"></i> Terrain</span>
+                        </label>
+                    </div>
+
+                    <h3 style="margin-top: 2rem;">Data Overlays</h3>
+                    <div class="overlay-control">
+                        <label class="overlay-option">
+                            <input type="checkbox" id="cities-layer">
+                            <span><i class="fas fa-city"></i> Major Cities</span>
+                        </label>
+                        <label class="overlay-option">
+                            <input type="checkbox" id="markers-layer">
+                            <span><i class="fas fa-map-marker-alt"></i> Custom Markers</span>
+                        </label>
+                    </div>
+
+                    <div class="map-info-panel">
+                        <h4><i class="fas fa-info-circle"></i> Map Info</h4>
+                        <p id="map-coords">Lat: 0.0000, Lng: 0.0000</p>
+                        <p id="map-zoom">Zoom: 2</p>
+                    </div>
+                </div>
+
+                <div id="explorer-map"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="text-gradient" style="text-align: center; margin-bottom: 4rem;">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="date">Aug 2025 - Present</span>
+                        <h3 class="role">GIS and Remote Sensing Associate</h3>
+                        <p class="company">Permia Sensing</p>
+                        <p>Contribute to the development and implementation of geospatial solutions. Leveraging GIS
+                            analysis and IT infrastructure to enhance spatial data interpretation.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="date">Apr 2025 - Jun 2025</span>
+                        <h3 class="role">Internship Trainee</h3>
+                        <p class="company">GIS Solutions (Pvt) Ltd</p>
+                        <p>Gained hands-on experience in GIS technologies and solutions in a professional setting.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="date">Jan 2024 - Mar 2025</span>
+                        <h3 class="role">Editor</h3>
+                        <p class="company">Sobha Society</p>
+                        <p>Editorial role focusing on environmental and social content.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="date">Feb 2022 - May 2025</span>
+                        <h3 class="role">Volunteer</h3>
+                        <p class="company">Zero Plastic Peradeniya</p>
+                        <p>Engaged in environmental activism and plastic reduction initiatives.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="date">Jan 2019 - Dec 2021</span>
+                        <h3 class="role">Call Center Agent</h3>
+                        <p class="company">FBC Asia Pacific Lanka</p>
+                        <p>Customer service and communication support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section" style="background: var(--bg-color);">
+        <div class="container">
+            <h2 class="text-gradient" style="text-align: center; margin-bottom: 3rem;">Skills & Certifications</h2>
+
+            <div class="skills-grid">
+                <div class="skill-tag">GIS Analysis</div>
+                <div class="skill-tag">Remote Sensing</div>
+                <div class="skill-tag">IT Infrastructure</div>
+                <div class="skill-tag">Microsoft Azure (AZ-900)</div>
+                <div class="skill-tag">CCNA</div>
+                <div class="skill-tag">Network Security</div>
+                <div class="skill-tag">Cybersecurity</div>
+                <div class="skill-tag">Generative AI</div>
+                <div class="skill-tag">Sustainable Development</div>
+                <div class="skill-tag">Sinhalese (Native)</div>
+                <div class="skill-tag">English (Professional)</div>
+                <div class="skill-tag">Tamil (Elementary)</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="text-gradient" style="text-align: center; margin-bottom: 1rem;">Certifications & Education</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;">Professional credentials and
+                academic achievements</p>
+
+            <!-- Certifications -->
+            <div class="cert-section">
+                <h3 style="color: var(--primary-color); margin-bottom: 2rem; text-align: center;">
+                    <i class="fas fa-certificate"></i> Professional Certifications
+                </h3>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon azure">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <h4>Microsoft Azure Fundamentals</h4>
+                        <p class="cert-id">AZ-900</p>
+                        <span class="cert-badge">Cloud Computing</span>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon cisco">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h4>Cisco Certified Network Associate</h4>
+                        <p class="cert-id">CCNA</p>
+                        <span class="cert-badge">Networking</span>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon security">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Cloud Security Engineer</h4>
+                        <p class="cert-id">Microsoft Certified</p>
+                        <span class="cert-badge">Security</span>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-icon gis">
+                            <i class="fas fa-globe-asia"></i>
+                        </div>
+                        <h4>GIS Professional</h4>
+                        <p class="cert-id">Remote Sensing Specialist</p>
+                        <span class="cert-badge">Geospatial</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="edu-section" style="margin-top: 4rem;">
+                <h3 style="color: var(--secondary-color); margin-bottom: 2rem; text-align: center;">
+                    <i class="fas fa-graduation-cap"></i> Education
+                </h3>
+                <div class="edu-grid">
+                    <div class="edu-card">
+                        <div class="edu-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3 class="edu-title">Bachelor of Arts - Geography</h3>
+                        <p class="edu-school">University of Peradeniya</p>
+                        <p class="edu-period">Graduated May 2021</p>
+                        <div class="edu-highlights">
+                            <span><i class="fas fa-star"></i> GIS & Remote Sensing</span>
+                            <span><i class="fas fa-star"></i> Spatial Analysis</span>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="edu-title">Master of Microsoft Certified Cloud Security Engineer</h3>
+                        <p class="edu-school">NextGen Campus</p>
+                        <p class="edu-period">July 2024 - 2025</p>
+                        <div class="edu-highlights">
+                            <span><i class="fas fa-star"></i> Cloud Security</span>
+                            <span><i class="fas fa-star"></i> Azure Platform</span>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="edu-title">CCNA, System & Network Management</h3>
+                        <p class="edu-school">IT Center, University of Peradeniya</p>
+                        <p class="edu-period">Jan 2023 - Aug 2024</p>
+                        <div class="edu-highlights">
+                            <span><i class="fas fa-star"></i> Network Admin</span>
+                            <span><i class="fas fa-star"></i> System Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="text-gradient" style="margin-bottom: 1rem;">Let's Connect</h2>
+            <p style="color: var(--text-muted); margin-bottom: 3rem;">Feel free to reach out for collaborations or
+                opportunities.</p>
+
+            <div class="contact-links">
+                <a href="mailto:roshan0770616913@gmail.com" class="contact-btn">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <span>Email Me</span>
+                </a>
+                <a href="https://www.linkedin.com/in/roshan-champika" target="_blank" class="contact-btn">
+                    <i class="fab fa-linkedin-in contact-icon"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="tel:+94711104509" class="contact-btn">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <span>Call Me</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Roshan Champika. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
